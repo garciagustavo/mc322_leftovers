@@ -35,20 +35,20 @@ Método | Objetivo
 -------| --------
 `<id do método em Java>` | `<objetivo do método e descrição dos parâmetros>`
 
-//## Exemplo:
+### Exemplo:
 
-//### Interface `ITableProducer`
-//Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
+### Interface `ITableProducer`
+Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
 
-//Método | Objetivo
-//-------| --------
-//`requestAttributes` | Retorna um vetor com o nome de todos os atributos (colunas) da tabela.
-//`requestInstances` | Retorna uma matriz em que cada linha representa uma instância e cada coluna o valor do respectivo atributo (a ordem dos atributos é a mesma daquela fornecida por `requestAttributes`.
+Método | Objetivo
+-------| --------
+`requestAttributes` | Retorna um vetor com o nome de todos os atributos (colunas) da tabela.
+`requestInstances` | Retorna uma matriz em que cada linha representa uma instância e cada coluna o valor do respectivo atributo (a ordem dos atributos é a mesma daquela fornecida por `requestAttributes`.
 
-//### Interface `IDataSource`
-//Define o recurso (usualmente o caminho para um arquivo em disco) que é a fonte de dados.
+### Interface `IDataSource`
+Define o recurso (usualmente o caminho para um arquivo em disco) que é a fonte de dados.
 
-//Método | Objetivo
-//-------| --------
-//`getDataSource` | Retorna o caminho da fonte de dados.
-//`setDataSource` | Define o caminho da fonte de dados, informado através do parâmetro `dataSource`.
+Método | Objetivo
+-------| --------
+`getDataSource` | Retorna o caminho da fonte de dados.
+`setDataSource` | Define o caminho da fonte de dados, informado através do parâmetro `dataSource`.
