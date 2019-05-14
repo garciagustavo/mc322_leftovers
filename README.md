@@ -28,7 +28,6 @@ public interface IDataVisualizer extends IDataPlot, IDataOrganizer {
 Método | Objetivo
 -------| --------
 `<plotTable>` | `Visualização da table fornecida`
--------| --------
 `<plotGraph>` | `Visualização em gráfico dos dados fornecidos`
 
 ### Interface `IDataOrganizer`
@@ -37,7 +36,5 @@ Método | Objetivo
 Método | Objetivo
 -------| --------
 `combineTable` | `Retorna a fusão de duas tabelas`
--------| --------
 `addColumn` | `adiciona coluna à tabela`
--------| --------
 `sortTable` | `Ordena a tabela`
