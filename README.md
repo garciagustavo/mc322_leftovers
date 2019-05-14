@@ -27,8 +27,8 @@ public interface IDataVisualizer extends IDataPlot, IDataOrganizer {
 
 Método | Objetivo
 -------| --------
-`<plotTable>` | `Visualização da table fornecida`
-`<plotGraph>` | `Visualização em gráfico dos dados fornecidos`
+`plotTable` | `Visualização da table fornecida`
+`plotGraph` | `Visualização em gráfico dos dados fornecidos`
 
 ### Interface `IDataOrganizer`
 `Organização de dados: Importar e exportar dados, combinação de tabelas, adição e remoção de linhas e/ou colunas, ordenar/agrupar/consultar dados, mapear e reduzir operações`.
