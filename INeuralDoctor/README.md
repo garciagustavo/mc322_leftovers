@@ -2,9 +2,9 @@
 
 Campo | Valor
 ----- | -----
-Classe | `<...>`
-Autores | `<Gabriel FÈlix>`
-Objetivo | `<Gerar uma rede neural para ser utilizada pelo Doutor no diagnÛstico do paciente>`
+Classe | `<INeuralDoctor.java>`
+Autores | `<Gabriel F√©lix>`
+Objetivo | `<Gerar uma rede neural para ser utilizada pelo Doutor no diagn√≥stico do paciente>`
 Interface | `<INeuralDoctor.java>`
 ~~~
 import java.io.File;
@@ -21,12 +21,12 @@ public interface INeuralDoctor {
 ~~~
 
 ### Interface `INeuralDoctor`
-Interface provida por qualquer fonte de dados que os forneÁa na forma de uma tabela.
+Interface provida por qualquer fonte de dados que os forne√ßa na forma de uma tabela.
 
-MÈtodo | Objetivo
+M√©todo | Objetivo
 -------| --------
-`importData` | importar a matriz de sintomas (.csv) do HD ou de alguma URL (futuramente pode-se utilizar a componente j· pronta DataSource).
-`analyseData` | atravÈs da biblioteca externa "Encog" analisar o arquivo (.csv): examinando cada coluna de sintoma e mapeando cada linha correspondente a uma doenÁa. Por fim, gerar uma rede neural do tipo feed forward.
-`generateNeuralNetwork` | normalizar os dados do modelo e avaliar o melhor mÈtodo para ser implementado na rede.
-`analyseCase` | recebe um paciente e a rede neural como par‚metros para diagnostic·-lo (vai ser conectado ao doutor).
-`endDiagnostics` | apaga o arquivo (.csv) e encerra as operaÁıes da rede neural.
+`importData` | importar a matriz de sintomas (.csv) do HD ou de alguma URL (futuramente pode-se utilizar a componente j√° pronta DataSource).
+`analyseData` | atrav√©s da biblioteca externa "Encog" analisar o arquivo (.csv): examinando cada coluna de sintoma e mapeando cada linha correspondente a uma doen√ßa. Por fim, gerar uma rede neural do tipo feed forward.
+`generateNeuralNetwork` | normalizar os dados do modelo e avaliar o melhor m√©todo para ser implementado na rede.
+`analyseCase` | recebe um paciente e a rede neural como par√¢metros para diagnostic√°-lo (vai ser conectado ao doutor).
+`endDiagnostics` | apaga o arquivo (.csv) e encerra as opera√ß√µes da rede neural.
