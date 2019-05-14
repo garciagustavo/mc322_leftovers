@@ -3,4 +3,4 @@
 Campo | Valor
 ----- | -----
 Objetivo | `<objetivo do componente>`
-Interface | `<interface em Java do componente>`grupo Leftovers.grupo Leftovers.# grupo Leftovers.
+Interface | `<interface em Java do componente>`grupo Leftovers.grupo Leftovers.# grupo Leftovers.# grupo Leftovers.
