@@ -4,10 +4,10 @@
 
 Campo | Valor
 ----- | -----
-Classe | `<INeuralDoctor.java>`
-Autores | `<Gabriel Félix>`
-Objetivo | `<Gerar uma rede neural para ser utilizada pelo Doutor no diagnóstico do paciente>`
-Interface | `<INeuralDoctor.java>`
+Classe | `INeuralDoctor.java`
+Autores | `Gabriel Félix`
+Objetivo | `Gerar uma rede neural para ser utilizada pelo Doutor no diagnóstico do paciente`
+Interface | `INeuralDoctor.java`
 ~~~
 import java.io.File;
 import java.util.Arrays;
