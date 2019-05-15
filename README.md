@@ -1,6 +1,6 @@
 # Grupo Leftovers!
 
-# Componente `<INeuralDoctor>`
+# Componente `INeuralDoctor`
 
 Campo | Valor
 ----- | -----
