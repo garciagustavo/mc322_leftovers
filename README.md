@@ -1,4 +1,6 @@
 # Grupo Leftovers!
+![logo](https://i.ibb.co/8z6F13t/fefe.jpg)
+
 Membros: Gabriel Félix, René F. Jallais, Gustavo Garcia.
 
 # Componente `INeuralDoctor`
@@ -47,13 +49,17 @@ Objetivo | `Organização e visualização de dados`
 Interface | `IDataVisualizer`
 ~~~
 public interface IDataPlot {
-  void plotTable(String Dados);
-  void plotGraph(String Dados);
+    void plotTable(String path);
+    void plotTable(Table table);
+    void plotTable(String[][] matrix);
+    void plotGraph(String path, String symptom);
 }
+
 public interface IDataOrganizer {
-  String[][] addPatient(String[] patient, String[][] table);
-  String[][] sortTable(String dados);
+    String[][] addPatient(String[] patient, String[][] matrix);
+    String[][] sortTable(String path);
 }
+
 public interface IDataVisualizer extends IDataPlot, IDataOrganizer {
 }
 ~~~
@@ -76,7 +82,7 @@ Método | Objetivo
 `addPatient` | `adiciona uma linha que representa um novo paciente à tabela`
 `sortTable` | `Ordena a tabela`
 
-# Componente `<IProbOfIllness>`
+# Componente `IProbOfIllness`
 
 Campo | Valor
 ----- | -----
