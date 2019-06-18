@@ -35,4 +35,4 @@ Método | Objetivo
 -------| --------
 `askSymp` | Questionamento do doutor em relação aos sintomas do paciente, que ao invés de responder apenas "yes" ou "no", ele responde variações de respostas afirmativas ou negativas.
 
-![UML Temp](https://i.ibb.co/F4THmCJ/Untitled-Diagram.png)
+<center>![UML Temp](https://i.ibb.co/F4THmCJ/Untitled-Diagram.png)</center>
