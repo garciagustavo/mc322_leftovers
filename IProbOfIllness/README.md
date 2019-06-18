@@ -1,20 +1,37 @@
-# Componente `<IProbOfIllness>`
+# Componente `<IEarlyDiagnosis>`
 
 Campo | Valor
 ----- | -----
-Classe | `<...>`
-Autores | `<Gustavo Garcia>`
-Objetivo | `<A partir de poucos sintomas iniciais, apresentar cada probabilidade das possÌveis doenÁas>`
-Interface | `<IProbability.java>`
+Classe | `ProbabilityComponent.java`
+Autores | `Gustavo Garcia`
+Objetivo | `A partir de poucos sintomas iniciais, apresentar cada probabilidade das poss√≠veis doen√ßas`
+Interface | `IEarlyDiagnosis.java`
 ~~~
-public interface IProbability {
-    public String[] diagnosis(File dataFile);
+public interface IEarlyDiagnosis {
+    public void calculateProbability(String[] symptoms);
 }
 ~~~
 
-### Interface `IProbability`
-A interface auxiliar· no diagnÛstico precoce das doenÁas, baseada em poucos sintomas iniciais, entregando probabilidades de possÌveis diagnÛsticos.
+### Interface `IEarlyDiagnosis`
+A interface auxiliar√° no diagn√≥stico precoce das doen√ßas, baseada em poucos sintomas iniciais, entregando probabilidades de poss√≠veis diagn√≥sticos.
 
-MÈtodo | Objetivo
+M√©todo | Objetivo
 -------| --------
-`diagnosis` | importar a matriz de sintomas (.csv) do HD ou de alguma URL (futuramente pode-se utilizar a componente j· pronta DataSource) e devolver um diagnÛstico probabilÌstico.
+`public void calculateProbability(String[] symptoms)` | O m√©todo pega um vetor de sintomas iniciais e imprime probabilidades de poss√≠veis doen√ßas.
+
+### Como usar
+
+// Criar um componente que representa seu dataset<br>
+IDataSet dataset = new DataSetComponent();
+
+// Importar seu dataset<br>
+dataset.setDataSource("caminho-do-seu-dataset.csv");
+
+// Criar um vetor de String com os sintomas iniciais<br>
+String sintomas[] = {"sintoma1", "sintoma2",...};
+
+// Criar o componente que calcula as probabilidades no seu dataset<br>
+IEarlyDiagnosis prob = new ProbabilisticComponent(dataset);
+
+// Chamar o m√©todo e receber a informa√ß√£o<br>
+prob.calculateProbability(sintomas);
