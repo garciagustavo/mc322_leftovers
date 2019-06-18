@@ -19,4 +19,19 @@ Método | Objetivo
 -------| --------
 `public void calculateProbability(String[] symptoms)` | O método pega um vetor de sintomas iniciais e imprime probabilidades de possíveis doenças.
 
+### Como usar
 
+// Criar um componente que representa seu dataset
+IDataSet dataset = new DataSetComponent();
+
+// Importar seu dataset
+dataset.setDataSource("caminho-do-seu-dataset.csv");
+
+// Criar um vetor de String com os sintomas iniciais
+String sintomas[] = {"sintoma1", "sintoma2",...};
+
+// Criar o componente que calcula as probabilidades no seu dataset
+IEarlyDiagnosis prob = new ProbabilisticComponent(dataset);
+
+// Chamar o método e receber a informação
+prob.calculateProbability(sintomas);
