@@ -2,10 +2,10 @@
 
 Campo | Valor
 ----- | -----
-Classe | `<ProbabilityComponent.java>`
-Autores | `<Gustavo Garcia>`
-Objetivo | `<A partir de poucos sintomas iniciais, apresentar cada probabilidade das possíveis doenças>`
-Interface | `<IEarlyDiagnosis.java>`
+Classe | `ProbabilityComponent.java`
+Autores | `Gustavo Garcia`
+Objetivo | `A partir de poucos sintomas iniciais, apresentar cada probabilidade das possíveis doenças`
+Interface | `IEarlyDiagnosis.java`
 ~~~
 public interface IEarlyDiagnosis {
     public void calculateProbability(String[] symptoms);
