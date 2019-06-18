@@ -1,4 +1,5 @@
 # Grupo Leftovers!
+Membros: Gabriel Félix, René F. Jallais, Gustavo Garcia.
 
 # Componente `INeuralDoctor`
 
