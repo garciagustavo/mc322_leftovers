@@ -29,7 +29,7 @@ Método | Objetivo
 `startInterview` | inicia a entrevista com um paciente.
 
 ### Classe `Patient`
-Classe implementada pelo professor André Santachè, porém com a adiação de um novo método.
+Classe implementada pelo professor André Santachè, porém com a adição de um novo método.
 
 Método | Objetivo
 -------| --------
