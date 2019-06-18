@@ -1,3 +1,4 @@
+![logo](https://i.ibb.co/VBcZVYF/jujujub.jpg)
 # Componente `<INeuralDoctor>`
 
 Campo | Valor
