@@ -21,17 +21,17 @@ Método | Objetivo
 
 ### Como usar
 
-// Criar um componente que representa seu dataset
+// Criar um componente que representa seu dataset<br>
 IDataSet dataset = new DataSetComponent();
 
-// Importar seu dataset
+// Importar seu dataset<br>
 dataset.setDataSource("caminho-do-seu-dataset.csv");
 
-// Criar um vetor de String com os sintomas iniciais
+// Criar um vetor de String com os sintomas iniciais<br>
 String sintomas[] = {"sintoma1", "sintoma2",...};
 
-// Criar o componente que calcula as probabilidades no seu dataset
+// Criar o componente que calcula as probabilidades no seu dataset<br>
 IEarlyDiagnosis prob = new ProbabilisticComponent(dataset);
 
-// Chamar o método e receber a informação
+// Chamar o método e receber a informação<br>
 prob.calculateProbability(sintomas);
