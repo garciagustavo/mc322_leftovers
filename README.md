@@ -4,34 +4,37 @@
 
 Campo | Valor
 ----- | -----
-Classe | `INeuralDoctor.java`
+Classe | `SmartDoctor.java`
 Autores | `Gabriel Félix`
 Objetivo | `Gerar uma rede neural para ser utilizada pelo Doutor no diagnóstico do paciente`
-Interface | `INeuralDoctor.java`
+Interface | `IDoctor.java`
 ~~~
-import java.io.File;
-import java.util.Arrays;
-import org.encog.*;
+package org.encog.examples.guide.classification;
 
-public interface INeuralDoctor {
-    public File importData(String[] args);
-    public EncogModel analyseData (File dataFile, int numColumns);
-    public MLRegression generateNeuralNetwork (EncogModel model);
-    public void analyseCase (MLRegression neuralNet, Patient namePaciente);
-    public void endDiagnostics (File dataFile);
+import java.util.ArrayList;
+
+public interface IDoctor extends IEnquirer, IResponderReceptacle, ITableProducerReceptacle {
+    public void doutorInteligente(String caminho, ArrayList<String> sintomas);
 }
+
 ~~~
 
-### Interface `INeuralDoctor`
-Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
+### Classe `SmartDoctor`
+Classe doutor inteligente, implementação de um doutor que se utiliza de rede neural para diagnosticar pacientes.
 
 Método | Objetivo
 -------| --------
-`importData` | importar a matriz de sintomas (.csv) do HD ou de alguma URL (futuramente pode-se utilizar a componente já pronta DataSource).
-`analyseData` | através da biblioteca externa "Encog" analisar o arquivo (.csv): examinando cada coluna de sintoma e mapeando cada linha correspondente a uma doença. Por fim, gerar uma rede neural do tipo feed forward.
-`generateNeuralNetwork` | normalizar os dados do modelo e avaliar o melhor método para ser implementado na rede.
-`analyseCase` | recebe um paciente e a rede neural como parâmetros para diagnosticá-lo (vai ser conectado ao doutor).
-`endDiagnostics` | apaga o arquivo (.csv) e encerra as operações da rede neural.
+`importData` | importar a matriz de sintomas (.csv) do HD já convertida em valores decimais (true -> 1.0 e false -> 0.0) para treinar a rede neural.
+`dadosPlanilha` | importar a  matriz de sintomas (.csv) original do HD para análise qualitativa do doutor (sintomas e doenças).
+`doutorInteligente` | implementação da rede neural, onde a partir da matriz de sintomas e doenças é gerado um modelo baseado na rede neural Feedfoward (sem cíclos entre os nós dos layers). O método é chamado na entrevista (startInterview()) e no final faz a comparação entre a resposta dada pelo doutor e a doença do paciente. Obviamente quanto melhor forem os dados fornecidos (# de casos), melhor será a acurácia do doutorInteligente. 
+`startInterview` | inicia a entrevista com um paciente.
+
+### Classe `Patient`
+Classe implementada pelo professor André Santachè, porém com a adiação de um novo método.
+
+Método | Objetivo
+-------| --------
+`askSymp` | Questionamento do doutor em relação aos sintomas do paciente, que ao invés de responder apenas "yes" ou "no", ele responde variações de respostas afirmativas ou negativas.
 
 # Componente `DataVisualizer`
 
