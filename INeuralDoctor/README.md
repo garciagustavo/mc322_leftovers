@@ -28,6 +28,9 @@ Método | Objetivo
 `treinarDoutor` | implementação da rede neural, onde a partir da matriz de sintomas e doenças é gerado um modelo baseado na rede neural Feedfoward (sem cíclos entre os nós dos layers). O método é chamado na main e não recebe nenhum parâmetro, ela gera um modelo para ser utilizado no método diagnosticar() e no final atualiza os atributos do doutor com uma rede neural já treinada.
 `startInterview` | inicia a entrevista com um paciente, chamando o método diagnosticar no final.
 
+### Como usar!!!
+Feita a conexão do arquivo .CSV através da componente DataSet com o Doutor pela interface ITableProducerReceptacle, basta chamar o método treinarDoutor para a instância de NewSmartDoctor, após isso o melhor modelo para a tabela de doenças x sintomas será salvo como atributo dessa instância. Para utilizar basta chamar o método diagnosticar(ArrayList<String> sintomas), que pode ser utilizado na main do programa. A implementação dessa componente foi feita em cima da estrutura das componentes do professor André Santachè.
+
 ### Classe `Patient`
 Classe implementada pelo professor André Santachè, porém com a adição de um novo método.
 
