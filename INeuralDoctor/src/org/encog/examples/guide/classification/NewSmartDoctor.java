@@ -92,7 +92,7 @@ public class NewSmartDoctor implements INewDoctor {
         this.bestMethod = bestMethod;
     }
 
-    public void diagnosticar(String caminho, ArrayList<String> sintomas) {
+    public void diagnosticar(ArrayList<String> sintomas) {
         // Pegar os parâmetros normalizados do modelo e utilizar o arquivo .CSV para aplicar no modelo
         // Poderiamos também utilziar uma nova tabela desconhecida .CSV com dados referentes ao mesmo tipo
         // de sistuação analisadas (sintomas x doenças) para fazer a classificação baseada no treino anterior.
@@ -141,6 +141,6 @@ public class NewSmartDoctor implements INewDoctor {
                 sintomas.add("0.0");
         }
         // Diagnosticar o paciente baseado no modelo já treinado.
-        diagnosticar(((IDataSet) producer).getDataSource(), sintomas);
+        diagnosticar(sintomas);
     }
 }

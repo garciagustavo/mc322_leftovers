@@ -5,4 +5,5 @@ import java.util.ArrayList;
 
 public interface INewDoctor extends IEnquirer, IResponderReceptacle, ITableProducerReceptacle {
     public void treinarDoutor();
+    public void diagnosticar(ArrayList<String> sintomas);
 }
